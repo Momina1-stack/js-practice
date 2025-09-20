@@ -46,3 +46,35 @@ const myFunction = function(){
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// stack and heap memory
+// stack(primitive memory), heap(non-primitive memory)
+
+let myYoutubeName = "hello@google.com"
+let anotherName= myYoutubeName
+anotherName="helloworld@gmail.com"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne={
+    email:"www@gmail.com"
+    upi: "user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="hiwww@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+//datatypes are based on memory allocation
+// Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+// Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+// JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it.
